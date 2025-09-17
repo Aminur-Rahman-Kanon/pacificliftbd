@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './banner.module.css';
-import Image from 'next/image';
 
 const Banner = () => {
     return (

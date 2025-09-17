@@ -49,7 +49,7 @@ const Page = () => {
                            className={styles.img} />
                 </div>
                 <div className={styles.gridTextContainer}>
-                    <h2 className={styles.headingMedium}>"With our vision as our guide, we proudly give people freedom to connect and thrive. In doing so, we will leave an enduring mark on the world."</h2>
+                    <h2 className={styles.headingMedium}>&quot;With our vision as our guide, we proudly give people freedom to connect and thrive. In doing so, we will leave an enduring mark on the world.&quot;</h2>
                     <h4 className={styles.headingSmallBold}>-Azizur Rahaman</h4>
                     <h4 className={styles.headingSmall}>Chair, Chief Executive Officer and President</h4>
                 </div>
