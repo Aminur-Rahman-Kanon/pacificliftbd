@@ -1,8 +1,13 @@
+.navbar {
+    /* position: relative; */
+}
+
 .navItem {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    list-style: none;
 }
 
 .link {
@@ -11,6 +16,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: white;
+    cursor: pointer;
 }
 
 .link::after {
@@ -28,4 +34,17 @@
 
 .link:hover::after {
     width: 105%;
+}
+
+.nestedItem {
+    position: absolute;
+    top: 86%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.item:hover >.nestedItem {
+    display: flex;
 }

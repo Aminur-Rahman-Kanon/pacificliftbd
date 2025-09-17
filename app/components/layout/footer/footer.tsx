@@ -53,17 +53,17 @@ const Footer = () => {
                 </div>
                 <div className={styles.listContainer}>
                     <div className={styles.lists}>
-                        <Link href={'#'} className={styles.listLink}>our company</Link>
+                        <Link href={'/about-us'} className={styles.listLink}>about us</Link>
                         <Link href={'#'} className={styles.listLink}>history</Link>
                         <Link href={'#'} className={styles.listLink}>innovation</Link>
                         <Link href={'#'} className={styles.listLink}>leadership</Link>
                         <Link href={'#'} className={styles.listLink}>board of director</Link>
-                        <Link href={'#'} className={styles.listLink}>sustainability & responsibility</Link>
+                        <Link href={'/sustainability-and-responsibility'} className={styles.listLink}>sustainability & responsibility</Link>
                     </div>
                     <div className={styles.lists}>
-                        <Link href={'#'} className={styles.listLink}>health & safety</Link>
-                        <Link href={'#'} className={styles.listLink}>governance & impact</Link>
-                        <Link href={'#'} className={styles.listLink}>people & communities</Link>
+                        <Link href={'/health-and-safety'} className={styles.listLink}>health & safety</Link>
+                        <Link href={'/governance-and-accountability'} className={styles.listLink}>governance & impact</Link>
+                        <Link href={'/environment-and-impact'} className={styles.listLink}>environment & impact</Link>
                         <Link href={'#'} className={styles.listLink}>suppliers</Link>
                         <Link href={'#'} className={styles.listLink}>join the team</Link>
                         <Link href={'#'} className={styles.listLink}>contact us</Link>

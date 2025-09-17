@@ -37,10 +37,24 @@
 }
 
 .headingLarge {
+    position: relative;
     font-size: 3rem;
     font-weight: 600;
     color: white;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.headingLarge::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: orange;
+    border-radius: 20px;
 }
 
 .info {
