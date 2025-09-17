@@ -1,0 +1,31 @@
+.navItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+
+}
+
+.link:hover::after {
+    width: 105%;
+}

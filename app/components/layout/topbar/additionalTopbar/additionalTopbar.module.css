@@ -1,0 +1,47 @@
+.additionalTopbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.link:not(:nth-of-type(1))::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+    transition: width 0.5s ease-out;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.link:nth-of-type(1) {
+    border-radius: 20px;
+    background-color: rgb(221, 144, 2);
+    color: white;
+    /* display: block; */
+    padding: 5px 10px;
+    gap: 5px;
+}
+
+.link:nth-of-type(1):hover {
+    background-color: rgb(238, 155, 0);
+}

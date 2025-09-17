@@ -1,0 +1,355 @@
+.aboutUs {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.floatingContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.headingLarge {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.info {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headingMediumNormal {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.headingMediumWithBar {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.headingMediumWithBar.black {
+    color: black;
+}
+
+.headingMediumWithBar.white {
+    color: white;
+}
+
+.headingMediumWithBar::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 80%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.textNormal {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    margin: 20px auto;
+    line-height: 32px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: orange;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+.link:hover {
+    background-color: rgb(214, 139, 0);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiCardContainer {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexImgContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flexTextContainer {
+    width: 50%;
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexCardMiddleContainer {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalContainer.left {
+    background-color: blue;
+}
+
+.verticalContainer.right {
+    background-color: orange;
+}
+
+.verticalHeadingMedium {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.verticalTextContainer {
+    width: 100%;
+    padding: 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.gridItem {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.gridImgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridTextContainer {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gridContainer >.gridItem:nth-of-type(2) > .gridImgContainer {
+    order: 2;
+}
+
+.gridContainer >.gridItem:nth-of-type(2) > .gridTextContainer {
+    order: 1;
+}
+
+@media(max-width: 1023px){
+    .flexImgContainer {
+        display: none;
+    }
+
+    .flexTextContainer {
+        width: 100%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .flexCardMiddleContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .verticalContainer.left {
+        background-color: unset;
+    }
+
+    .verticalContainer.right {
+        display: none;
+    }
+
+    .verticalHeadingMedium {
+        position: relative;
+        transform: rotate(0);
+        color: black;
+    }
+
+    .verticalHeadingMedium::after {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        content: '';
+        width: 70%;
+        height: 3px;
+        border-radius: 20px;
+        background-color: orange;
+        /* margin-bottom: 20px/; */
+    }
+
+    .verticalTextContainer {
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .gridItem {
+        grid-template-columns: 70%;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .gridContainer >.gridItem:nth-of-type(2) > .gridImgContainer {
+        order: 1;
+    }
+
+    .gridContainer >.gridItem:nth-of-type(2) > .gridTextContainer {
+        order: 2;
+    }
+
+    .gridTextContainer {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .gridItem {
+        grid-template-columns: 1fr;
+    }
+
+    .link {
+        max-width: unset;
+    }
+
+    .floatingContainer {
+        width: 90%;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
