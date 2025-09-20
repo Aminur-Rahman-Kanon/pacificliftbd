@@ -32,7 +32,7 @@ const Page = () => {
 
             <div className={styles.gridContainer}>
                 {
-                    gridContainerData.map(itm => <div className={styles.gridItem}>
+                    gridContainerData.map(itm => <div key={itm.id} className={styles.gridItem}>
                         <div className={styles.top}>
                             <div className={styles.gridImgContainer}>
                                 <Image src={itm.img}
