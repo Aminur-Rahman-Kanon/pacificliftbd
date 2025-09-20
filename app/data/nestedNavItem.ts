@@ -4,11 +4,6 @@ import { faBox, faBuilding, faWrench } from '@fortawesome/free-solid-svg-icons';
 const nestedNavItem: NavItemType[] = [
     {
         id: 1,
-        icon: {
-            icon: faBox,
-            color: 'white',
-            size: '3x'
-        },
         heading: 'products & services',
         child: [
             {
@@ -186,11 +181,6 @@ const nestedNavItem: NavItemType[] = [
 
     {
         id: 2,
-        icon: {
-            icon: faWrench,
-            size: '3x',
-            color: 'white'
-        },
         heading: 'tools & resources',
         child: [
             {
@@ -353,11 +343,6 @@ const nestedNavItem: NavItemType[] = [
 
     {
         id: 3,
-        icon: {
-            icon: faBuilding,
-            size: '3x',
-            color: 'white'
-        },
         heading: 'our company',
         child: [
             {
