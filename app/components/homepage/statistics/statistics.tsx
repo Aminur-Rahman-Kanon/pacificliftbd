@@ -12,6 +12,8 @@ const customerAmount = 25;
 const Statistics = () => {
     
     const statisticsRef = useRef<HTMLDivElement | null>(null);
+
+    const hasFinishedExecution = useRef<boolean>(false);
     
     const isIntersecting = useOnScreen(statisticsRef, 0.7);
 
@@ -20,11 +22,14 @@ const Statistics = () => {
     const [serviced, setServiced] = useState(0);
 
     const [customer, setCustomer] = useState(0);
-
+    
     useEffect(() => {
-        const timeOutIds: number[] = [];
+        
+        if (isIntersecting && !hasFinishedExecution.current) {
+            const timeOutIds: number[] = [];
 
-        if (isIntersecting && !completedProject && !serviced && !customer) {
+            hasFinishedExecution.current = true;
+
             for (let i=0; i<completedProjectAmount; i++){
                 const id = window.setTimeout(() => {
                     setCompletedProject((completedProject) => completedProject += 1)
@@ -49,10 +54,6 @@ const Statistics = () => {
                 timeOutIds.push(id);
             }
         }
-
-        return () => {
-            timeOutIds.forEach(id => clearTimeout(id));
-        };
     }, [isIntersecting]);
 
     return (

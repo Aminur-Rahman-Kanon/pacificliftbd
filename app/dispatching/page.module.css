@@ -1,0 +1,238 @@
+.dispatching {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floatingContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingLarge {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headingLarge::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.stylishTextContainer {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.headingMedium {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+.headingMedium::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.textStylish {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gridContainer {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px 20px;
+}
+
+.gridItem {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
+    overflow: hidden;
+    justify-content: space-between;
+    
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; */
+}
+
+.gridImgContainer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.headingSmall {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.textNormal {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.link {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: background-color 0.5s ease-out;
+}
+
+.link:hover {
+    background-color: rgb(216, 141, 1);
+}
+
+.stylingFlexContainer {
+    width: 100%;
+}
+
+.gridContainerSmall {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.gridSmallItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallImgContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1250px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridContainerSmall {
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+
+@media (max-width: 850px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .gridItem {
+        grid-template-rows: auto;
+    }
+
+    .gridContainerSmall {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .stylishTextContainer {
+        max-width: unset;
+        padding: 20px;
+    }
+}

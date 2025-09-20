@@ -19,12 +19,26 @@ const Carousel:React.FC<Props> = ({ slides }) => {
     ]);
 
     const [ embla, setEmbla ] = useState<EmblaCarouselType | null>(null);
+    const [scrollSnaps, setScollSnaps] = useState<number[] | undefined>([]);
+    const [index, setIndex] = useState<number | undefined>(0);
 
+    const onSelect = useCallback(() => {
+        if (!emblaApi) return;
+
+        setIndex(emblaApi.selectedScrollSnap())
+    }, [emblaApi]);
+
+    
     useEffect(() => {
         if (emblaApi){
             setEmbla(emblaApi);
         }
-    }, [emblaApi]);
+
+        setScollSnaps(emblaApi?.scrollSnapList());
+        onSelect();
+        emblaApi?.on('select', onSelect)
+    }, [emblaApi, onSelect]);
+
 
     const scrollNext = useCallback(() => {
         embla?.scrollNext();
@@ -35,7 +49,6 @@ const Carousel:React.FC<Props> = ({ slides }) => {
     }, [embla])
 
     if (!slides) return;
-
     
     return (
         <div className={styles.embla}>
@@ -58,6 +71,16 @@ const Carousel:React.FC<Props> = ({ slides }) => {
                                 <button className={styles.bannerBtn}>View the Projects</button>
                             </div>
                         </div>)
+                    }
+                </div>
+                <div className={styles.pagination}>
+                    {
+                        scrollSnaps ? scrollSnaps.map((itm, idx) => <span key={idx}
+                                                                    className={idx === index ? `${styles.bar} ${styles.active}` : styles.bar}>
+
+                        </span>)
+                        :
+                        null
                     }
                 </div>
             </div>

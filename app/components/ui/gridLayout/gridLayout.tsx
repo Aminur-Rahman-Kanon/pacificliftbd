@@ -28,8 +28,6 @@ const GridLayout:React.FC<Props> = ({ item }) => {
 
     const isValidItem = isValidGridItem(item);
 
-    console.log(screenWidth);
-
     const handleImageOrientation = () => {
         if (item.orientation === 'rtl' && screenWidth > 1023){
             return {

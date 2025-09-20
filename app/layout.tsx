@@ -3,6 +3,7 @@ import { Saira } from "next/font/google";
 import "./globals.css";
 import Topbar from "./components/layout/topbar/topbar";
 import Footer from "./components/layout/footer/footer";
+import MobileMenu from "./components/layout/mobileMenu/mobileMenu";
 
 const saira = Saira({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${saira.variable}`}>
         <Topbar />
+        <MobileMenu />
         {children}
         <Footer />
       </body>
