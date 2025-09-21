@@ -18,11 +18,32 @@ const NavItem:React.FC<Props> = ({ navItem }) => {
     const screenWidth = useScreenWidth();
     const pathname = usePathname();
 
+    const mouseEnterHandler = (el:HTMLElement) => {
+        if (!el) return;
+
+        const tag = el.children[0] as HTMLElement;
+        tag.classList.add(`${styles.active}`);
+        (el.children[1] as HTMLElement).style.display = 'flex';
+    }
+
+    const mouseLeaveHandler = (el:HTMLElement) => {
+        if (!el) return;
+
+        const tag = el.children[0] as HTMLElement;
+        tag.classList.remove(`${styles.active}`);
+        (el.children[1] as HTMLElement).style.display = 'none';
+    }
+
     useEffect(() => {
         const el = document.getElementById(`nav-item-${navItem.heading}`);
 
-        el?.addEventListener('mouseenter', () => (el.children[1] as HTMLElement).style.display = 'flex');
-        el?.addEventListener('mouseleave', () => (el.children[1] as HTMLElement).style.display = 'none');
+        el?.addEventListener('mouseenter', () => mouseEnterHandler(el));
+        el?.addEventListener('mouseleave', () => mouseLeaveHandler(el));
+
+        return () => {
+            el?.removeEventListener('mouseenter', () => mouseEnterHandler(el));
+            el?.removeEventListener('mouseleave', () => mouseLeaveHandler(el));
+        }
     }, [])
 
     useEffect(() => {

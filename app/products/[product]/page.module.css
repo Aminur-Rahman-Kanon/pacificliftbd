@@ -1,0 +1,156 @@
+.page {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flexColumn {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumn.customWidth {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.gridContainer {
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    max-width: 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.gridContainerSmall {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 420px);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.gridItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gridTop {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingMedium {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.headingMedium::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 70%;
+    height: 3px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.headingSmall {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.link {
+    width: 100%;
+    height: 40px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    text-transform: capitalize;
+    transition: background-color 0.5s ease-out;
+}
+
+.link:hover {
+    background-color: rgb(224, 146, 1);
+}
+
+.textStylish {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin: 25px 0;
+}
+
+@media (max-width: 1023px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridContainerSmall {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 767px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .gridContainerSmall {
+        grid-template-columns: 1fr;
+    }
+
+    .flexColumn.customWidth {
+        max-width: unset;
+    }
+}

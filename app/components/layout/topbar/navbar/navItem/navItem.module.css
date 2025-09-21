@@ -10,7 +10,11 @@
     text-transform: uppercase;
     color: white;
     cursor: pointer;
-    z-index: 200;
+    z-index: 2100;
+}
+
+.tag.active::after {
+    width: 100%;
 }
 
 .tag::after {
@@ -132,11 +136,16 @@
         font-size: 1.2rem;
         font-weight: 400;
         text-align: center;
+        z-index: 200;
     }
 
     .tag::after {
         content: none;
     }
+
+    /* .tag.active::after {
+        width: unset;
+    } */
 
     .link::after {
         content: none;

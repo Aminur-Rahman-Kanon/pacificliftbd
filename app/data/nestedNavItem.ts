@@ -12,18 +12,18 @@ const nestedNavItem: NavItemType[] = [
                 elements: [
                     {
                         id: 1,
-                        href: '/low-rise-elevators',
-                        tag: 'low-rise elevators'
+                        href: '/products/low-rise-elevator',
+                        tag: 'low-rise-elevator'
                     },
                     {
                         id: 2,
-                        href: '/mid-rise-elevators',
-                        tag: 'mid-rise elevators'
+                        href: '/products/mid-rise-elevator',
+                        tag: 'mid-rise-elevator'
                     },
                     {
                         id: 3,
-                        href: '/high-rise-elevators',
-                        tag: 'high-rise elevators'
+                        href: '/products/high-rise-elevator',
+                        tag: 'high-rise-elevator'
                     },
                     {
                         id: 4,
