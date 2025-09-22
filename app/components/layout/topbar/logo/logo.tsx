@@ -5,11 +5,11 @@ import Image from 'next/image';
 const Logo = () => {
     return (
         <div className={styles.logo}>
-            <Image src='/images/logo/logo_transparent.png'
+            <Image src='/images/logo/logo_new.png'
                    alt='logo'
-                   height={100}
+                   height={200}
                    width={200}
-                   sizes='100%'
+                   sizes='100vw'
                    className={styles.img}/>
         </div>
     )

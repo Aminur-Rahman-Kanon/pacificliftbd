@@ -12,22 +12,22 @@ const nestedNavItem: NavItemType[] = [
                 elements: [
                     {
                         id: 1,
-                        href: '/products/low-rise-elevator',
+                        href: '/products/product/low-rise-elevator',
                         tag: 'low-rise-elevator'
                     },
                     {
                         id: 2,
-                        href: '/products/mid-rise-elevator',
+                        href: '/products/product/mid-rise-elevator',
                         tag: 'mid-rise-elevator'
                     },
                     {
                         id: 3,
-                        href: '/products/high-rise-elevator',
+                        href: '/products/product/high-rise-elevator',
                         tag: 'high-rise-elevator'
                     },
                     {
                         id: 4,
-                        href: '/escalators & moving walks',
+                        href: '/escalators-and-moving walks',
                         tag: 'escalators & moving walks'
                     },
                     {
@@ -54,42 +54,42 @@ const nestedNavItem: NavItemType[] = [
                 elements: [
                     {
                         id: 1,
-                        href: '/residential',
+                        href: '/products/industry/residential',
                         tag: 'residential'
                     },
                     {
                         id: 2,
-                        href: '/retail',
+                        href: '/products/industry/retail',
                         tag: 'retail'
                     },
                     {
                         id: 3,
-                        href: '/office',
+                        href: '/products/industry/office',
                         tag: 'office'
                     },
                     {
                         id: 4,
-                        href: '/hospital',
+                        href: '/products/industry/hospital',
                         tag: 'hospital'
                     },
                     {
                         id: 5,
-                        href: '/hotel',
+                        href: '/products/industry/hotel',
                         tag: 'hotel'
                     },
                     {
                         id: 6,
-                        href: '/multi-use-building',
+                        href: '/products/industry/multi-use-building',
                         tag: 'multi-use-building'
                     },
                     {
                         id: 7,
-                        href: '/infrastructure',
+                        href: '/products/industry/infrastructure',
                         tag: 'infrastructure'
                     },
                     {
                         id: 8,
-                        href: '/global project',
+                        href: '/products/industry/global project',
                         tag: 'global project'
                     }
                 ]

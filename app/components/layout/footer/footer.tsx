@@ -13,10 +13,10 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.top}>
                 <div className={styles.logo}>
-                    <Image src={'/images/logo/logo_transparent_2.png'}
+                    <Image src={'/images/logo/logo_new.png'}
                         alt='pacific lift BD'
-                        width={150}
-                        height={80}
+                        width={100}
+                        height={100}
                         sizes='100%'
                         className={styles.img} />
                 </div>

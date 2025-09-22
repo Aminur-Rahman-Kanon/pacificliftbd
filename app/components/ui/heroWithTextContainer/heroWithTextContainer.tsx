@@ -1,12 +1,12 @@
+'use client';
+
 import React from 'react';
 import styles from './heroWithTextContainer.module.css';
 import HeroWithTextContainerType from '@/app/types/heroWithTextContainer';
 import Image from 'next/image';
 import Link from 'next/link';
+import TextContainer from '../textContainer/textContainer';
 
-type Props = {
-    item: HeroWithTextContainerType
-}
 
 const HeroWithTextContainer:React.FC<HeroWithTextContainerType> = ({ hero }) => {
 
@@ -19,8 +19,9 @@ const HeroWithTextContainer:React.FC<HeroWithTextContainerType> = ({ hero }) => 
                     <Image src={hero.heroTop.img}
                         alt={hero.heroTop.heading}
                         width={640}
-                        height={480}
-                        sizes='100%'
+                        height={427}
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, 640px"
                         className={styles.img} />
                 </div>
                 <div className={styles.floatingContainer}>
@@ -28,15 +29,7 @@ const HeroWithTextContainer:React.FC<HeroWithTextContainerType> = ({ hero }) => 
                 </div>
             </div>
 
-            <div className={styles.heroBottom}>
-                <h2 className={`${styles.heading} ${styles.medium}`}>{hero.heroBottom.heading}</h2>
-                {
-                    hero.heroBottom.text.map((txt, idx) => <p key={idx} className={styles.textStylish}>
-                        {txt}
-                    </p>)
-                }
-                <Link href={hero.heroBottom.link.href} className={styles.link}>{hero.heroBottom.link.text}</Link>
-            </div>
+            <TextContainer item={hero.heroBottom} />
         </section>
     )
 }

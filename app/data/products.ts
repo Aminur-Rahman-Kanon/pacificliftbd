@@ -8,6 +8,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 heading: 'low-rise elevators'
             },
             heroBottom: {
+                id: '1',
                 heading: 'High quality elevators for low-rise buildings',
                 text: ['Low-rise doesn’t mean low-performance. We offer a wide variety of quality passenger transportation solutions for small buildings with up to 5 floors. Safety, comfort, compact design and energy efficiency are top-of-mind as we provide quality transportation at every price point. With robust design and reliable rides, our elevators keep people safely moving, no matter where they’re headed.'],
                 link: {
@@ -20,7 +21,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
             heading: 'low-rise elevator products',
             products: [
                 {
-                    id: 1,
+                    id: '1',
                     heading: 'gen3 elevator',
                     img: '/images/lowRiseElevator/item_1.jpg',
                     link: {
@@ -29,7 +30,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 2,
+                    id: '2',
                     heading: 'hydrofit',
                     img: '/images/lowRiseElevator/item_2.jpg',
                     link: {
@@ -39,7 +40,8 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 },
             ] 
         },
-        "text-container-2": {
+        "text-container": {
+            id: '1',
             heading: 'pacific lift signature service',
             text: [
                 'With each of our service packages, we offer elevator repair and maintenance services with quick responses and transparent proactive communication. Our mechanics are not only highly trained and equipped with proprietary apps to provide you with our highest level of safety and service – they’re also committed to meeting your personal expectations on the job site',
@@ -52,14 +54,20 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
         },
         'navigations': [
             {
-                id: 1,
-                img: '/images/lowRiseElevator/nav_1.jpg',
-                heading: 'find your elevator with PL create'
+                id: '1',
+                img: '/images/products/nav/nav_1.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
             },
             {
-                id: 2,
-                img: '/images/lowRiseElevator/nav_2.jpg',
-                heading: 'contact us'
+                id: '2',
+                img: '/images/products/nav/nav_2.jpg',
+                link: {
+                    text: 'contact us',
+                    href: '#'
+                }
             },
         ]
     },
@@ -70,6 +78,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 heading: 'mid-rise elevators'
             },
             heroBottom: {
+                id: '1',
                 heading: 'Mid-rise solutions with a high-rise experience',
                 text: [
                     'At pacific lift, we have experience providing passenger transportation products for countless innovative buildings. That experience translates into a high-quality, mid-rise solution with a high-rise experience. Whether it’s in a luxurious hotel or a simple office building, we aim to make each passenger’s journey a comfortable, efficient and all-around enjoyable one.',
@@ -85,7 +94,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
             heading: 'mid-rise elevator products',
             products: [
                 {
-                    id: 1,
+                    id: '1',
                     heading: 'gen3 elevator',
                     img: '/images/midRiseElevator/item_1.jpg',
                     link: {
@@ -94,7 +103,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 2,
+                    id: '2',
                     heading: 'EMS panaroma 2.0',
                     img: '/images/midRiseElevator/item_2.jpg',
                     link: {
@@ -103,7 +112,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 3,
+                    id: '3',
                     heading: 'compass 360',
                     img: '/images/midRiseElevator/item_3.jpg',
                     link: {
@@ -113,7 +122,8 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 },
             ] 
         },
-        "text-container-2": {
+        "text-container": {
+            id: '3',
             heading: 'pacific lift Signature Service™',
             text: [
                 'With each of our service packages, we offer elevator repair and maintenance services with quick responses and transparent proactive communication. Our mechanics are not only highly trained and equipped with proprietary apps to provide you with our highest level of safety and service – they’re also committed to meeting your personal expectations on the job site.',
@@ -126,14 +136,20 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
         },
         'navigations': [
             {
-                id: 1,
-                img: '/images/midRiseElevator/nav_1.jpg',
-                heading: 'find your elevator with PL create'
+                id: '1',
+                img: '/images/products/nav/nav_1.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
             },
             {
-                id: 2,
-                img: '/images/midRiseElevator/nav_2.jpg',
-                heading: 'contact us'
+                id: '2',
+                img: '/images/products/nav/nav_2.jpg',
+                link: {
+                    text: 'contact us',
+                    href: '#'
+                }
             },
         ]
     },
@@ -144,6 +160,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 heading: 'high-rise elevators'
             },
             heroBottom: {
+                id: '1',
                 heading: 'The sky’s the limit with our high-rise elevators',
                 text: [
                     'When you choose our elevators, we’re with you every step of the way as a design partner to help you create custom performance equipment. High-rise buildings can often require custom designs for managing car arrangements with single, double, and super double deck solutions, as well as lobby arrangements. Designed for high speed, our elevators are the perfect choice for high-rise buildings with more than 16+ stops that get heavy traffic and have unique needs.',
@@ -159,7 +176,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
             heading: 'high-rise elevator products',
             products: [
                 {
-                    id: 1,
+                    id: '1',
                     heading: 'skyrise elevator',
                     img: '/images/highRiseElevator/item_1.jpg',
                     link: {
@@ -168,7 +185,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 2,
+                    id: '2',
                     heading: 'skubuild elevator',
                     img: '/images/highRiseElevator/item_2.jpg',
                     link: {
@@ -177,7 +194,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 3,
+                    id: '3',
                     heading: 'compass 360',
                     img: '/images/highRiseElevator/item_3.jpg',
                     link: {
@@ -186,7 +203,7 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                     }
                 },
                 {
-                    id: 4,
+                    id: '4',
                     heading: 'EMS panaroma',
                     img: '/images/highRiseElevator/item_4.jpg',
                     link: {
@@ -196,7 +213,8 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
                 },
             ] 
         },
-        "text-container-2": {
+        "text-container": {
+            id: '1',
             heading: 'pacific lift Signature Service™',
             text: [
                 'With each of our service packages, we offer elevator repair and maintenance services with quick responses and transparent proactive communication. Our mechanics are not only highly trained and equipped with proprietary apps to provide you with our highest level of safety and service – they’re also committed to meeting your personal expectations on the job site.',
@@ -209,14 +227,20 @@ export const productPageSkeleton: ProductsPageSkeletonType = {
         },
         'navigations': [
             {
-                id: 1,
-                img: '/images/highRiseElevator/nav_1.jpg',
-                heading: 'find your elevator with PL create'
+                id: '1',
+                img: '/images/products/nav/nav_1.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
             },
             {
-                id: 2,
-                img: '/images/highRiseElevator/nav_2.jpg',
-                heading: 'contact us'
+                id: '2',
+                img: '/images/products/nav/nav_2.jpg',
+                link: {
+                    text: 'contact us',
+                    href: '#'
+                }
             },
         ]
     },

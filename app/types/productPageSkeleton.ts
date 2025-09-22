@@ -5,7 +5,7 @@ export interface ProductsPageSkeletonType {
 interface ProductPageSkeletonType {
     'hero': Hero,
     'products': Products,
-    'text-container-2': TextContainer,
+    'text-container': TextContainer,
     'navigations': Navigation[]
 }
 
@@ -20,9 +20,10 @@ type HeroTop = {
 }
 
 type TextContainer = {
+    id: string,
     heading: string,
     text: string[],
-    link: Link,
+    link?: Link,
 }
 
 type Products = {
@@ -31,16 +32,16 @@ type Products = {
 }
 
 type Product = {
-    id: number,
+    id: string,
     img: string,
     heading: string,
     link: Link
 }
 
-type Navigation = {
-    id: number,
+export type Navigation = {
+    id: string,
     img: string,
-    heading: string
+    link: Link
 }
 
 type Link = {
@@ -48,7 +49,3 @@ type Link = {
     href: string
 }
 
-type Text = {
-    id: number,
-    text: string
-}
