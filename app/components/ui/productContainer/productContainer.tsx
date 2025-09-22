@@ -21,7 +21,7 @@ const ProductContainer:React.FC<Props> = ({ items, heading }) => {
             
             <div className={styles.gridContainer}>
                 {
-                    items.map(prd => <div className={styles.gridItem}>
+                    items.map(prd => <div key={prd.id} className={styles.gridItem}>
                         <div className={styles.gridTop}>
                             <Image src={prd.img}
                                    alt={prd.heading}
