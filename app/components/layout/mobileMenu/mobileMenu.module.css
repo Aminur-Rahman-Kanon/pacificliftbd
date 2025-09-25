@@ -112,7 +112,19 @@
 }
 
 @media (max-width: 767px) {
+    .headingSmall {
+        font-size: 1rem;
+    }
+
     .icon {
         font-size: 2rem;
+    }
+
+    .textNormal {
+        font-size: 1rem;
+    }
+
+    .textBold {
+        font-size: 1rem;
     }
 }
