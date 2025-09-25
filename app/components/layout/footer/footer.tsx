@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.top}>
                 <div className={styles.logo}>
-                    <Image src={'/images/logo/logo_4.png'}
+                    <Image src={'/images/logo/logo_8.png'}
                         alt='pacific lift BD'
                         width={100}
                         height={100}
@@ -35,9 +35,8 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className={styles.contact}>
-                    <p className={styles.textNormal}>House no 1</p>
-                    <p className={styles.textNormal}>North Kutub Khali High School Road</p>
-                    <p className={styles.textNormal}>Jatarabari, Dhaka 1236</p>
+                    <p className={styles.textNormal}><strong>head office:</strong> 17 (old-14) north kutubkhali khan super market, jatrabari, dhaka 1236</p>
+                    <p className={styles.textNormal}><strong>warehouse:</strong> b/75 malibag, chowdhurypara, dhaka-1100</p>
                 </div>
                 <span className={styles.textBold}>Pacific Lift BD All right Reserved</span>
             </div>

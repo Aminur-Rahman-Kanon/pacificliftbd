@@ -7,7 +7,7 @@ const Info = () => {
     return (
         <div className={styles.info}>
             <div className={styles.imgContainer}>
-                <Image src='/images/others/map.jpg'
+                <Image src='/images/others/map.png'
                        alt='world map'
                        width={640}
                        height={480}

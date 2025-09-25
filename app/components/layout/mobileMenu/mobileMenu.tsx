@@ -63,9 +63,8 @@ const MobileMenu = () => {
                 </div>
 
                 <div className={styles.textContainer}>
-                    <p className={styles.textNormal}>house no 1</p>
-                    <p className={styles.textNormal}>north kutub khali high school road</p>
-                    <p className={styles.textNormal}>jatrabari, dhaka 1236</p>
+                    <p className={styles.textNormal}><strong>head office:</strong> 17 (old-14) north kutubkhali khan super market, jatrabari, dhaka 1236</p>
+                    <p className={styles.textNormal}><strong>warehouse:</strong> b/75 malibag, chowdhurypara, dhaka-1100</p>
                     <p className={styles.textBold}>pacific lift &copy; all rught reserved</p>
                 </div>
             </div>

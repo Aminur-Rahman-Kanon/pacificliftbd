@@ -110,3 +110,9 @@
     color: white;
     margin-top: 20px;
 }
+
+@media (max-width: 767px) {
+    .icon {
+        font-size: 2rem;
+    }
+}

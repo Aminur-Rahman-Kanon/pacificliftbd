@@ -1,12 +1,12 @@
 .featuresGrid {
     width: 100%;
     max-width: 1400px;
-    margin: 50px auto;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: repeat(2, 480px);
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 45px;
 }
 
 .container {
@@ -42,18 +42,21 @@
 
 .footerHead {
     margin: 20px auto;
+    padding: 20px 30px;
 }
 
 .headingSmall {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
-    
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .textNormal {
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: 1.1rem;
+    line-height: 30px;
+    text-align: center;
 }
 
 .link {
@@ -78,5 +81,9 @@
 @media (max-width: 767px) {
     .featuresGrid {
         grid-template-columns: 1fr;
+    }
+
+    .footerHead {
+        padding: 20px;
     }
 }
