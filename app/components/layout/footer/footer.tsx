@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.top}>
                 <div className={styles.logo}>
-                    <Image src={'/images/logo/logo_new.png'}
+                    <Image src={'/images/logo/logo_4.png'}
                         alt='pacific lift BD'
                         width={100}
                         height={100}
@@ -39,7 +39,7 @@ const Footer = () => {
                     <p className={styles.textNormal}>North Kutub Khali High School Road</p>
                     <p className={styles.textNormal}>Jatarabari, Dhaka 1236</p>
                 </div>
-                <span className={styles.copyright}>Pacific Lift BD All right Reserved</span>
+                <span className={styles.textBold}>Pacific Lift BD All right Reserved</span>
             </div>
 
             <div className={styles.bottom}>

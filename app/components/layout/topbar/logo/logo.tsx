@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Logo = () => {
     return (
         <div className={styles.logo}>
-            <Image src='/images/logo/logo_new.png'
+            <Image src='/images/logo/logo_4.png'
                    alt='logo'
                    height={200}
                    width={200}
