@@ -1,0 +1,129 @@
+.featureSectionWithGridLayout {
+    width: 100%;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer {
+    display: grid;
+    margin: 25px auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gridImgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headingMedium {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.textNormal {
+    font-size: 1.1rem;
+    margin: 25px 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.gridText {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 25px 0;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1023px) {
+    .featureSectionWithGridLayout {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .infoContainer {
+        margin-top: 25px;
+    }
+
+    .imgContainer {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .featureSectionWithGridLayout {
+        margin: 50px auto;
+    }
+
+    .infoContainer {
+        padding: 0;
+    }
+
+    .headingMedium {
+        font-size: 1.5rem;
+    }
+
+    .textNormal {
+        font-size: 1rem;
+    }
+
+    .gridText {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .gridItem {
+        margin: 10px auto;
+    }
+
+}

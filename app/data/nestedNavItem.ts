@@ -30,11 +30,11 @@ const nestedNavItem: NavItemType[] = [
                         href: '/escalators-and-moving walks',
                         tag: 'escalators & moving walks'
                     },
-                    {
-                        id: 5,
-                        href: '/dispatching',
-                        tag: 'dispatching'
-                    },
+                    // {
+                    //     id: 5,
+                    //     href: '/dispatching',
+                    //     tag: 'dispatching'
+                    // },
                     {
                         id: 6,
                         href: '/our awards & honors',
@@ -101,7 +101,7 @@ const nestedNavItem: NavItemType[] = [
                 elements: [
                     {
                         id: 1,
-                        href: '/pacific-lift-bd-signature-service',
+                        href: '/products/service/signature-service',
                         tag: 'pacific lift BD signature service'
                     },
                     {
@@ -208,11 +208,11 @@ const nestedNavItem: NavItemType[] = [
                 id: 2,
                 heading: 'contractors / developers',
                 elements: [
-                    {
-                        id: 1,
-                        href: '/dispatching',
-                        tag: 'dispatching'
-                    },
+                    // {
+                    //     id: 1,
+                    //     href: '/dispatching',
+                    //     tag: 'dispatching'
+                    // },
                     {
                         id: 2,
                         href: '/high-risk-safety',

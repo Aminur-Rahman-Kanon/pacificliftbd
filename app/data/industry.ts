@@ -405,6 +405,161 @@ const industryPageData: IndustryPageType = {
             }
         ]
     },
+    'multi-use-building': {
+        'id': '6',
+        'hero': {
+            heroTop: {
+                img: '/images/products/industry/multi_use.jpg',
+                heading: 'multi use building'
+            },
+            heroBottom: {
+                id: '1',
+                heading: 'Custom elevators for unique needs',
+                text: [
+                    'Some buildings simply don’t fit into a standard mold. That’s why all of our multi-purpose lifts are customizable and can be tailored to meet the unique needs of mixed-use buildings that bring residential, office, hotel, retail, and entertainment spaces together.',
+                ]
+            }
+        },
+        "text-container-1": {
+            id: '2',
+            heading: 'Working together to find the right design',
+            text: [
+                'From finding the right design aesthetic for your building to ensuring smooth traffic management, we’re committed to working with you as a partner through every step of the planning phase. We help create solutions and protocols to dispatch passengers with a range of destinations in the same building.',
+            ]
+        },
+        "text-container-2": {
+            id: '3',
+            heading: 'Sustainable multi-use elevators',
+            text: [
+                'We are committed to using technology that reduces our impact on the planet. Our products are available with the latest efficiency features built in and sustainable modernization upgrade packages are available for existing passenger elevators.',
+            ]
+        },
+        'products': [
+            {
+                id: '1',
+                img: '/images/products/industry/item_1.jpg',
+                heading: 'elevator products',
+                link: {
+                    text: 'read more',
+                    href: '#'
+                }
+            },
+            {
+                id: '2',
+                img: '/images/products/industry/item_2.jpg',
+                heading: 'pacific lift signature service',
+                link: {
+                    text: 'see how it works',
+                    href: '#'
+                }
+            },
+            {
+                id: '3',
+                img: '/images/products/industry/item_3.jpg',
+                heading: 'modernization',
+                link: {
+                    text: 'read more',
+                    href: '#'
+                }
+            }
+        ],
+        'navigation': [
+            {
+                id: '1',
+                img: '/images/products/nav/nav_1.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
+            },
+            {
+                id: '2',
+                img: '/images/products/nav/nav_2.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
+            }
+        ]
+    },
+    'infrastructure': {
+        'id': '7',
+        'hero': {
+            heroTop: {
+                img: '/images/products/industry/airport.jpg',
+                heading: 'Airports / Railways / Metro / Subways'
+            },
+            heroBottom: {
+                id: '1',
+                heading: 'Always available & accessible elevators and escalators',
+                text: [
+                    'In public spaces, passenger mobility is always on. That’s why our products are built to withstand heavy traffic during peak travel hours in airports and railway, metro, and subway stations. We’re committed to working with you to find solutions that are accessible and built to save space and keep people moving around the clock.',
+                ]
+            }
+        },
+        "text-container-1": {
+            id: '2',
+            heading: 'Elevators and escalators with code compliant specifications',
+            text: [
+                'We understand that having access to technical specifications upfront is critical when building out new solutions or trying to update and modernize existing infrastructure. And with optimal connectivity and comprehensive service packages, our products are built to ensure maximum uptime and reliable rides.',
+            ]
+        },
+        "text-container-2": {
+            id: '3',
+            heading: 'Pacific Lift Signaturace Service ™',
+            text: [
+                'With each of our comprehensive service packages, we offer elevator repair and maintenance services with quick responses and transparent proactive communication. Our mechanics are not only highly trained and equipped with proprietary apps to provide you with our highest level of safety and service – they’re also committed to meeting your personal expectations on the job site.',
+                'We provide property managers with real-time and accurate information about their equipment, so passengers flows are monitored to deliver a continuous seamless experience at any time. Our timely, event-driven notifications and conversations are the cornerstone of the long-term transparent and trusting relationships we build to support passengers, no matter where they’re headed.'
+            ]
+        },
+        'products': [
+            {
+                id: '1',
+                img: '/images/products/industry/item_1.jpg',
+                heading: 'elevator products',
+                link: {
+                    text: 'read more',
+                    href: '#'
+                }
+            },
+            {
+                id: '2',
+                img: '/images/products/industry/item_2.jpg',
+                heading: 'pacific lift signature service',
+                link: {
+                    text: 'see how it works',
+                    href: '#'
+                }
+            },
+            {
+                id: '3',
+                img: '/images/products/industry/item_3.jpg',
+                heading: 'modernization',
+                link: {
+                    text: 'read more',
+                    href: '#'
+                }
+            }
+        ],
+        'navigation': [
+            {
+                id: '1',
+                img: '/images/products/nav/nav_1.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
+            },
+            {
+                id: '2',
+                img: '/images/products/nav/nav_2.jpg',
+                link: {
+                    text: 'find your elevator with PL create',
+                    href: '#'
+                }
+            }
+        ]
+    },
 }
 
 export default industryPageData;

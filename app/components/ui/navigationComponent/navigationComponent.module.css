@@ -1,0 +1,82 @@
+.navigationComponent {
+    width: 100%;
+    margin: 100px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.link {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+
+.headingSmall {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    filter: opacity(1);
+    transition: all 0.5s ease-out;
+}
+
+.headingFloating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    filter: opacity(0);
+    transition: all 0.5s ease-out;
+}
+
+.link:hover .img {
+    filter: brightness(0.4);
+    transform: scale(1.2);
+}
+
+.link:hover .headingSmall {
+    filter: opacity(0);
+}
+
+.link:hover .headingFloating {
+    filter: opacity(1);
+}
+
+@media (max-width: 1023px) {
+    .link {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 767px) {
+    .navigationComponent {
+        flex-direction: column;
+    }
+}
