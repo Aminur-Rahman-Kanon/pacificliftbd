@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './customCarousel.module.css';
 import CustomCarouselType from '@/app/types/customCarousel';
 import { carouselGrid } from '@/app/data/pacificOne';
@@ -15,9 +15,19 @@ type Props = {
 
 const CustomCarousel:React.FC<Props> = ({ item, itemToDisplayPerSlides }) => {
 
-    const { itemWidth, itemToDisplay } = useCarouselItemCalculation(itemToDisplayPerSlides, document.getElementById('carousel-container'));
-
+    
     const [index, setIndex] = useState(0);
+    
+    const [carouselElement, setCarouselElement] = useState<HTMLElement | null>(null);
+    
+    const { itemWidth, itemToDisplay } = useCarouselItemCalculation(itemToDisplayPerSlides, carouselElement);
+
+    useEffect(() => {
+        const el = document.getElementById('carousel-container');
+        if (el){
+            setCarouselElement(el);
+        }
+    }, [])
 
     if (!item) return;
 
