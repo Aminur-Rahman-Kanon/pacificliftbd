@@ -6,7 +6,7 @@ import TextContainerType from '@/app/types/textContainer';
 import Link from 'next/link';
 
 type Props = {
-    item: TextContainerType
+    item: TextContainerType | undefined
 }
 
 const TextContainer:React.FC<Props> = ({ item }) => {

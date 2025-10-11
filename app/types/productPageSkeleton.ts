@@ -11,12 +11,17 @@ interface ProductPageSkeletonType {
 
 export type Hero = {
     heroTop: HeroTop,
-    heroBottom: TextContainer
+    heroBottom?: TextContainer
 }
 
 type HeroTop = {
     img: string,
-    heading: string
+    heading: string,
+    text?: string,
+    link?: {
+        text: string,
+        href: string
+    }
 }
 
 type TextContainer = {

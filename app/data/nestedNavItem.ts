@@ -106,7 +106,7 @@ const nestedNavItem: NavItemType[] = [
                     },
                     {
                         id: 2,
-                        href: '/pacific-lift-bd-one',
+                        href: '/products/service/pl-one',
                         tag: 'pacific lift BD one'
                     },
                     {

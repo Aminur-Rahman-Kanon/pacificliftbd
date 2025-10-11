@@ -2,13 +2,15 @@
 
 import React from 'react';
 import styles from './heroWithTextContainer.module.css';
-import HeroWithTextContainerType from '@/app/types/heroWithTextContainer';
+import { Hero } from '@/app/types/productPageSkeleton';
 import Image from 'next/image';
-import Link from 'next/link';
 import TextContainer from '../textContainer/textContainer';
 
+type Props = {
+    hero: Hero
+}
 
-const HeroWithTextContainer:React.FC<HeroWithTextContainerType> = ({ hero }) => {
+const HeroWithTextContainer:React.FC<Props> = ({ hero }) => {
 
     if (!hero) return;
 
