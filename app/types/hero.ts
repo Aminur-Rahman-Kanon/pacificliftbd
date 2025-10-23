@@ -2,7 +2,7 @@ interface HeroType {
     id: string,
     header: string,
     backgroundImage: string,
-    textContainer: Text[],
+    textContainer?: Text[],
     link?: {
         text: string,
         href: string

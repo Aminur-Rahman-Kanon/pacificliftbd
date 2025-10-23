@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './customCarousel.module.css';
 import CustomCarouselType from '@/app/types/customCarousel';
 import { carouselGrid } from '@/app/data/pacificOne';
@@ -19,6 +19,9 @@ const CustomCarousel:React.FC<Props> = ({ item, itemToDisplayPerSlides }) => {
     const [index, setIndex] = useState(0);
     
     const [carouselElement, setCarouselElement] = useState<HTMLElement | null>(null);
+
+    const touchStartX = useRef<number | null>(null);
+    const touchEndX = useRef<number | null>(null);
     
     const { itemWidth, itemToDisplay } = useCarouselItemCalculation(itemToDisplayPerSlides, carouselElement);
 
@@ -57,10 +60,41 @@ const CustomCarousel:React.FC<Props> = ({ item, itemToDisplayPerSlides }) => {
         carousel.scrollBy({ left: - scrollAmount, behavior: 'smooth' })
     };
 
+    const onTouchStart = (e:React.TouchEvent) => {
+        touchStartX.current = e.targetTouches[0].clientX;
+        touchEndX.current = null;
+    }
+
+    const onTouchMove = (e:React.TouchEvent) => {
+        touchEndX.current = e.targetTouches[0].clientX;
+    }
+
+    const onTouchEnd = () => {
+        const el = document.getElementById('carousel-container');
+        if (!el) return;
+        
+        const scrollableDistance = itemWidth * itemToDisplay;
+        const scrollWidth = el.scrollLeft;
+
+        if (scrollWidth > scrollableDistance){
+            setIndex(index => index += 1);
+        }
+        // if (scrollWidth < sc) {
+        //     setIndex(index => index -= 1);
+        // }
+    }
+
+    console.log(itemWidth);
+    console.log(itemToDisplay);
+
 
     return (
         <section className={styles.customCarousel}>
-            <div className={styles.carouselContainer} id='carousel-container'>
+            <div className={styles.carouselContainer}
+                 id='carousel-container'
+                 onTouchStart={onTouchStart}
+                 onTouchMove={onTouchMove}
+                 onTouchEnd={onTouchEnd}>
                 {
                     carouselGrid.carousel.map(itm => <div key={itm.id} className={styles.item} style={{ width: itemWidth }}>
                         <div className={styles.iconContainer}>

@@ -5,6 +5,7 @@ import styles from './featureSectionWithGridLayout.module.css';
 import FeatureSectionGridLayoutType from '@/app/types/featureSectionGridLayout';
 import Image from 'next/image';
 import useScreenWidth from '@/app/hooks/useScreenWidth';
+import Link from 'next/link';
 
 type Props = {
     item: FeatureSectionGridLayoutType
@@ -20,6 +21,8 @@ const FeatureSectionWithGridLayout:React.FC<Props> = ({ item }) => {
     const screenWidth = useScreenWidth();
 
     if (!item) return;
+
+    
 
     //this function changes the order of image and info container based on image order and screen width
     function imageOrderHandler(): ElementOrder{
@@ -80,6 +83,12 @@ const FeatureSectionWithGridLayout:React.FC<Props> = ({ item }) => {
                         </div>)
                     }
                 </div>
+
+                {
+                    item.link ? <Link href={item.link.href} className={styles.link}>{item.link.text}</Link>
+                    :
+                    null
+                }
             </div>
         </section>
     )

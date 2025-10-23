@@ -20,7 +20,6 @@ const Page:React.FC<Props> = async ({ params }) => {
     const pageToLoad = industryPageData[category];
 
     const heading = Object.keys(industryPageData).find(itm => itm === category);
-    console.log(heading)
 
     if (!category || !pages.includes(category) || !pageToLoad || !heading) return;
 

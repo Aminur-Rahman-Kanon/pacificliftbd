@@ -1,0 +1,142 @@
+.improveAesthetics {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.infoWithHero {
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingMedium {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.headingMedium::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 70%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.link {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgContainer {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.floatingContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingMediumStylish {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.headingSmall {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.headingSmall::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: orange;
+}
+
+.textWhite {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+
+@media (max-width: 767px) {
+    .link {
+        max-width: unset;
+    }
+}

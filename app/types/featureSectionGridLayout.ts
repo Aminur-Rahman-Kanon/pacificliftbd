@@ -1,10 +1,11 @@
 interface FeatureSectionGridLayoutType {
     id: string,
     backgroundImg: string,
-    imgPosition: string,
+    imgPosition: 'left' | 'right',
     heading: string,
     text: TextType[],
-    gridLayout?: GridLayout[]
+    gridLayout?: GridLayout[],
+    link?: Link
 }
 
 type TextType = {
@@ -16,6 +17,11 @@ type GridLayout = {
     id: string,
     img: string,
     text: string
+}
+
+type Link = {
+    text: string,
+    href: string
 }
 
 export default FeatureSectionGridLayoutType;

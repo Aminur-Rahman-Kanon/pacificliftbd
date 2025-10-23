@@ -1,5 +1,5 @@
 import NavItemType from "../types/navItem";
-import { faBox, faBuilding, faWrench } from '@fortawesome/free-solid-svg-icons';
+
 
 const nestedNavItem: NavItemType[] = [
     {
@@ -27,7 +27,7 @@ const nestedNavItem: NavItemType[] = [
                     },
                     {
                         id: 4,
-                        href: '/escalators-and-moving walks',
+                        href: '/escalators-and-moving-walks',
                         tag: 'escalators & moving walks'
                     },
                     // {
@@ -111,14 +111,14 @@ const nestedNavItem: NavItemType[] = [
                     },
                     {
                         id: 3,
-                        href: '/new-elevator-warranty-manual',
+                        href: '/products/service/warranty-manual',
                         tag: 'new elevator warranty manual'
                     },
-                    {
-                        id: 4,
-                        href: '/service contract selector',
-                        tag: 'service contract selector'
-                    }
+                    // {
+                    //     id: 4,
+                    //     href: '/service contract selector',
+                    //     tag: 'service contract selector'
+                    // }
                 ]
             },
 
@@ -128,34 +128,34 @@ const nestedNavItem: NavItemType[] = [
                 elements: [
                     {
                         id: 1,
-                        href: '/modernization',
+                        href: '/products/modernization-and-upgrades/modernization',
                         tag: 'modernization'
                     },
                     {
                         id: 2,
-                        href: '/passenger-experience',
+                        href: '/products/modernization-and-upgrades/passenger-experience',
                         tag: 'passenger experience'
                     },
                     {
                         id: 3,
-                        href: '/improves aesthetics',
+                        href: '/products/modernization-and-upgrades/improves-aesthetics',
                         tag: 'improved aesthetics'
                     },
                     {
                         id: 4,
-                        href: '/upgrades & replacement',
+                        href: '/products/modernization-and-upgrades/upgrades-and-replacement',
                         tag: 'upgrades & replacement'
                     },
                     {
                         id: 5,
-                        href: '/health & safety product',
+                        href: '/tools-resources/safety-features',
                         tag: 'health & safety product'
                     },
-                    {
-                        id: 6,
-                        href: '/elevator management system',
-                        tag: 'elevator management system'
-                    }
+                    // {
+                    //     id: 6,
+                    //     href: '/elevator management system',
+                    //     tag: 'elevator management system'
+                    // }
                 ]
             },
 

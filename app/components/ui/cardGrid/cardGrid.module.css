@@ -14,12 +14,12 @@
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    margin: 50px auto;
+    margin-bottom: 80px;
 }
 
 .headingLarge::after {
     position: absolute;
-    bottom: -10%;
+    bottom: -20px;
     left: 50%;
     transform: translate(-50%, 10%);
     content: '';
