@@ -28,7 +28,7 @@ const Hero:React.FC<Props> = ({ item }) => {
                 <h2 className={styles.headingLarge}>{item.header}</h2>
                 <div className={styles.textContainer}>
                     {
-                        item.textContainer.map(txt => <p key={txt.id} className={styles.text}>{txt.text}</p>)
+                        item.textContainer ? item.textContainer.map(txt => <p key={txt.id} className={styles.text}>{txt.text}</p>) : null
                     }
                 </div>
                 {

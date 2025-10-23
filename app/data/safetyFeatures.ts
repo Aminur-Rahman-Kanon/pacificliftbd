@@ -14,7 +14,7 @@ export const hero: Hero = {
         id: '1',
         heading: 'moving the world safely',
         text: [
-            'As we continue to navigate these unprecedented times, Otis continues to innovate new products and safety features for our customers and passengers.',
+            'As we continue to navigate these unprecedented times, pacific lift continues to innovate new products and safety features for our customers and passengers.',
             'We share these helpful tips and resources to effectively communicate to your building occupants and assist in smooth transitions back to building operations.'
         ]
     }
