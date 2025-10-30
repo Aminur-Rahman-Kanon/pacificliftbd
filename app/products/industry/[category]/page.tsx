@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
-import industryPageData from '@/app/data/industry';
+import industryPageData from '@/app/data/productsAndServices/industry/industry';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
 import TextContainer from '@/app/components/ui/textContainer/textContainer';
 import ProductContainer from '@/app/components/ui/productContainer/productContainer';

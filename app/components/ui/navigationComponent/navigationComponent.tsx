@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './navigationComponent.module.css';
-import navigationComponentData from '@/app/data/navigationComponent';
+import navigationComponentData from '@/app/data/navigationComponent/navigationComponent';
 import Link from 'next/link';
 import Image from 'next/image';
 

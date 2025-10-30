@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
-import { productPageSkeleton } from '@/app/data/products';
+import { productPageSkeleton } from '@/app/data/productsAndServices/products/products';
 import { notFound } from 'next/navigation';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
 import TextContainer from '@/app/components/ui/textContainer/textContainer';

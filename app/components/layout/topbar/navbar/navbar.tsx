@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './navbar.module.css';
 import Link from 'next/link';
 import NavItem from './navItem/navItem';
-import nestedNavItem from '@/app/data/nestedNavItem';
+import nestedNavItem from '@/app/data/others/nestedNavItem';
 
 const Navbar = () => {
     return (

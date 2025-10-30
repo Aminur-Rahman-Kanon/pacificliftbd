@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Hero from '@/app/components/ui/hero/hero';
-import { hero1, hero2, featureSectionWithGridLayout1, featureSectionWithGridLayout2 } from '@/app/data/signatureService';
+import { hero1, hero2, featureSectionWithGridLayout1, featureSectionWithGridLayout2 } from '@/app/data/productsAndServices/service/signatureService';
 import Link from 'next/link';
 import FeatureSectionWithGridLayout from '@/app/components/ui/featureSectionWithGridLayout/featureSectionWithGridLayout';
 import Image from 'next/image';

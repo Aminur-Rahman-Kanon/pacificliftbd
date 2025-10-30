@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './featuresStories.module.css';
-import featuresStories from '@/app/data/featuresStories';
+import featuresStories from '@/app/data/others/featuresStories';
 import Image from 'next/image';
 import Link from 'next/link';
 

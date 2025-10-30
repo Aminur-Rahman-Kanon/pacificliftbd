@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
 import FeatureGrid from '@/app/components/ui/featureGrid/featureGrid';
 import NavigationComponent from '@/app/components/ui/navigationComponent/navigationComponent';
-import { hero, gridLayout } from '@/app/data/safetyFeatures';
+import { hero, gridLayout } from '@/app/data/productsAndServices/modernization-and-upgrades/safetyFeatures';
 
 const Page = () => {
     return (

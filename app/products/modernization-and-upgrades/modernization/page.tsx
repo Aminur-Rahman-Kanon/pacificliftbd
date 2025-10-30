@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
-import { hero, simpleGridLayout, prime, plus, pro } from '@/app/data/modernization';
+import { hero, simpleGridLayout, prime, plus, pro } from '@/app/data/productsAndServices/modernization-and-upgrades/modernization';
 import SimpleGridLayout from '@/app/components/ui/simpleGridLayout/simpleGridLayout';
 import FeatureSectionWithGridLayout from '@/app/components/ui/featureSectionWithGridLayout/featureSectionWithGridLayout';
 

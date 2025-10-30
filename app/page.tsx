@@ -4,7 +4,7 @@ import Info from "./components/homepage/info/info";
 import Statistics from "./components/homepage/statistics/statistics";
 import Banner from "./components/homepage/banner/banner";
 import FeaturesGrid from "./components/homepage/featuresGrid/featuresGrid";
-import { heroSlides, completedProjects } from "./data/appData";
+import { heroSlides, completedProjects } from "@/app/data/others/appData";
 import FeaturesStories from "./components/homepage/featuresStories/featuresStories";
 
 export default function Home() {

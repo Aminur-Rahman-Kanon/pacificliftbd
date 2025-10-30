@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './page.module.css';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
 import FeatureGrid from '@/app/components/ui/featureGrid/featureGrid';
-import { hero, featuresGrid } from '@/app/data/improvedAesthetics';
+import { hero, featuresGrid } from '@/app/data/productsAndServices/modernization-and-upgrades/improvedAesthetics';
 import NavigationComponent from '@/app/components/ui/navigationComponent/navigationComponent';
 import Link from 'next/link';
 import Image from 'next/image';

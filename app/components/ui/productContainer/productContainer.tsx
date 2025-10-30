@@ -32,7 +32,9 @@ const ProductContainer:React.FC<Props> = ({ items, heading }) => {
                         </div>
                         <div className={styles.gridBottom}>
                             <h3 className={styles.headingSmall}>{prd.heading}</h3>
-                            <Link href={prd.link.href} className={styles.link}>{prd.link.text}</Link>
+                            {
+                                prd.link ? <Link href={prd.link.href} className={styles.link}>{prd.link.text}</Link> : null
+                            }
                         </div>
                     </div>)
                 }

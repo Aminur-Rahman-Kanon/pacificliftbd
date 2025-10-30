@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
-import { hero, featureContainer1, featureContainer2 } from '@/app/data/passenger';
+import { hero, featureContainer1, featureContainer2 } from '@/app/data/productsAndServices/modernization-and-upgrades/passenger';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
 import FeatureSectionWithGridLayout from '@/app/components/ui/featureSectionWithGridLayout/featureSectionWithGridLayout';
 import NavigationComponent from '@/app/components/ui/navigationComponent/navigationComponent';
