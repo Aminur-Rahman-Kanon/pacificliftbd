@@ -1,4 +1,4 @@
-import NavigationComponentType from "../types/navigation";
+import NavigationComponentType from "@/app/types/navigation";
 
 const navigationComponentData: NavigationComponentType[] = [
     {

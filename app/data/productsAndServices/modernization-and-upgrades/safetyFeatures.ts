@@ -1,5 +1,5 @@
-import { Hero } from "../types/productPageSkeleton";
-import FeatureGridType from "../types/featureGrid";
+import { Hero } from "@/app/types/productPageSkeleton";
+import FeatureGridType from "@/app/types/featureGrid";
 
 export const hero: Hero = {
     heroTop: {

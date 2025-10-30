@@ -1,4 +1,4 @@
-import GridLayoutType from "../types/gridLayout"
+import GridLayoutType from "@/app/types/gridLayout"
 
 export const gridLayoutItemData:GridLayoutType[] = [
     {

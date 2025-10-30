@@ -1,4 +1,4 @@
-import LeadershipType from "../types/leadership"
+import LeadershipType from "@/app/types/leadership"
 
 const leadershipData: LeadershipType[] = [
     {

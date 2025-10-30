@@ -1,6 +1,6 @@
-import { Hero } from "../types/productPageSkeleton"
-import TextContainerType from "../types/textContainer"
-import FeatureSectionGridLayoutType from "../types/featureSectionGridLayout"
+import { Hero } from "@/app/types/productPageSkeleton"
+import TextContainerType from "@/app/types/textContainer"
+import FeatureSectionGridLayoutType from "@/app/types/featureSectionGridLayout"
 
 
 export const hero: Hero = {

@@ -1,6 +1,6 @@
-import { Hero } from "../types/productPageSkeleton";
-import SimpleGridLayoutType from "../types/simpleGridLayout";
-import FeatureSectionGridLayoutType from "../types/featureSectionGridLayout";
+import { Hero } from "@/app/types/productPageSkeleton";
+import SimpleGridLayoutType from "@/app/types/simpleGridLayout";
+import FeatureSectionGridLayoutType from "@/app/types/featureSectionGridLayout";
 import { Shield, SlidersVertical, Grid2X2Plus, Leaf, HardHat, Gem, Trophy, Award } from 'lucide-react';
 
 export const hero: Hero = {

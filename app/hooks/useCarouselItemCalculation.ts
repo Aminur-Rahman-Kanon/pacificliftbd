@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useScreenWidth from "./useScreenWidth";
 
 const useCarouselItemCalculation = (numberOfItems:number, element:HTMLElement | null) => {

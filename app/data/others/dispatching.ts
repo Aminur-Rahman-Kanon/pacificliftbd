@@ -1,5 +1,5 @@
-import GridData from "../types/dispatching"
-import NewspaperLayoutType from "../types/newspaperLayout"
+import GridData from "@/app/types/dispatching"
+import NewspaperLayoutType from "@/app/types/newspaperLayout"
 
 export const gridContainerData: GridData[] = [
     {

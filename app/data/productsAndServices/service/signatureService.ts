@@ -1,5 +1,5 @@
-import HeroType from "../types/hero"
-import FeatureSectionGridLayoutType from "../types/featureSectionGridLayout"
+import HeroType from "@/app/types/hero"
+import FeatureSectionGridLayoutType from "@/app/types/featureSectionGridLayout"
 
 export const hero1:HeroType = {
     id: '1',

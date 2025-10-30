@@ -1,7 +1,6 @@
 //import HeroWithTestContainer, 
 //
 import { Hero } from "@/app/types/productPageSkeleton";
-import FeatureSectionGridLayoutType from "@/app/types/featureSectionGridLayout";
 
 
 export const hero: Hero = {

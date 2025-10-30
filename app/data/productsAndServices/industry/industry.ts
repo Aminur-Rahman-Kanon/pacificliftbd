@@ -1,4 +1,4 @@
-import { IndustryPageType } from "../types/industryPageSkeleton"
+import { IndustryPageType } from "@/app/types/industryPageSkeleton"
 
 const industryPageData: IndustryPageType = {
     'residential': {

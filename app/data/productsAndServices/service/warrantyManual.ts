@@ -1,4 +1,4 @@
-import FeatureSectionGridLayoutType from "../types/featureSectionGridLayout"
+import FeatureSectionGridLayoutType from "@/app/types/featureSectionGridLayout"
 
 export const featureSection1:FeatureSectionGridLayoutType = {
     id: '1',
