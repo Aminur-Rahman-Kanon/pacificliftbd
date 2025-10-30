@@ -69,7 +69,7 @@ const Page = () => {
 
                         <ul className={styles.listContainer}>
                             <li className={styles.list}>
-                                Max rise height: 39'4" at a step width of 40 in.
+                                Max rise height: 39&lsquo;4&quot; at a step width of 40 in.
                             </li>
                             <li className={styles.list}>
                                 Inclination: 30 degrees
@@ -119,7 +119,7 @@ const Page = () => {
                 <h3 className={styles.headingExtraSmall}>escalators</h3>
                 <ul className={styles.listContainer}>
                     <li className={styles.list}>
-                        Max rise height: 65' 7" at a step width of 40 in. (Special request up to 100' rise available)
+                        Max rise height: 65&lsquo; 7&quot; at a step width of 40 in. (Special request up to 100&lsquo; rise available)
                     </li>
                     <li className={styles.list}>
                         Inclination: 30°
@@ -167,7 +167,7 @@ const Page = () => {
 
                         <ul className={styles.listContainer}>
                             <li className={styles.list}>
-                                Maximum length: 394'
+                                Maximum length: 394&lsquo;
                             </li>
                             <li className={styles.list}>
                                 Inclination: 0° up to 3°
