@@ -1,4 +1,4 @@
-import GridLayoutType from "../types/gridLayout"
+import GridLayoutType from "@/app/types/gridLayout"
 
 const safetyData: GridLayoutType[] = [
     {

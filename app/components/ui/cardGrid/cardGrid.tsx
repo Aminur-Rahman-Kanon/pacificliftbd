@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './cardGrid.module.css';
-import { cardGrid } from '@/app/data/pacificOne';
+import { cardGrid } from '@/app/data/productsAndServices/service/pacificOne';
 import Image from 'next/image';
 import Link from 'next/link';
 

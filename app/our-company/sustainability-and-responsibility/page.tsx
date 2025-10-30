@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import GridLayout from '../components/ui/gridLayout/gridLayout';
+import GridLayout from '@/app/components/ui/gridLayout/gridLayout';
 import sustainabilityData from '@/app/data/ourCompany/sustainabilityResponsibility';
 
 const Page = () => {

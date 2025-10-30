@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import leadershipData from '../data/leadership';
+import leadershipData from '@/app/data/ourCompany/leadership';
 
 const Page = () => {
     return (

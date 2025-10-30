@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import GridLayout from '../components/ui/gridLayout/gridLayout';
-import innovationData from '../data/innovation';
+import GridLayout from '@/app/components/ui/gridLayout/gridLayout';
+import innovationData from '@/app/data/ourCompany/innovation';
 
 const Page = () => {
     return (

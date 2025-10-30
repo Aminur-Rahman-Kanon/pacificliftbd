@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import FeatureSectionWithGridLayout from '@/app/components/ui/featureSectionWithGridLayout/featureSectionWithGridLayout';
-import { featureSection1, featureSection2 } from '@/app/data/warrantyManual';
+import { featureSection1, featureSection2 } from '@/app/data/productsAndServices/service/warrantyManual';
 import Link from 'next/link';
 
 const Page = () => {

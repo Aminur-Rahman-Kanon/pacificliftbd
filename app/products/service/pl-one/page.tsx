@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './page.module.css';
 import HeroWithTextContainer from '@/app/components/ui/heroWithTextContainer/heroWithTextContainer';
-import { hero1, featureGrid, hero2 } from '@/app/data/pacificOne';
+import { hero1, featureGrid, hero2 } from '@/app/data/productsAndServices/service/pacificOne';
 import NavigationComponent from '@/app/components/ui/navigationComponent/navigationComponent';
 import CardGrid from '@/app/components/ui/cardGrid/cardGrid';
 import CustomCarousel from '@/app/components/ui/customCarousel/customCarousel';
-import { carouselGrid } from '@/app/data/pacificOne';
+import { carouselGrid } from '@/app/data/productsAndServices/service/pacificOne';
 import Image from 'next/image';
 
 const Page = () => {

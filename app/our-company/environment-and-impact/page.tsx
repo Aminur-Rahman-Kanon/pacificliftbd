@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
-import environmentData from '../data/ourCompany/environment';
-import GridLayout from '../components/ui/gridLayout/gridLayout';
+import environmentData from '@/app/data/ourCompany/environment';
+import GridLayout from '@/app/components/ui/gridLayout/gridLayout';
 import Image from 'next/image';
 
 const Page = () => {

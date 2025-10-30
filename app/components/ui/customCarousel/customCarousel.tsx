@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './customCarousel.module.css';
 import CustomCarouselType from '@/app/types/customCarousel';
-import { carouselGrid } from '@/app/data/pacificOne';
+import { carouselGrid } from '@/app/data/productsAndServices/service/pacificOne';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import useCarouselItemCalculation from '@/app/hooks/useCarouselItemCalculation';

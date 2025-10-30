@@ -1,8 +1,8 @@
 import React from 'react';
 ;import styles from './page.module.css';
 import Image from 'next/image';
-import GridLayout from '../components/ui/gridLayout/gridLayout';
-import safetyData from '../data/safety';
+import GridLayout from '@/app/components/ui/gridLayout/gridLayout';
+import safetyData from '@/app/data/others/safety';
 
 const Page = () => {
     return (
