@@ -84,9 +84,6 @@ const CustomCarousel:React.FC<Props> = ({ item, itemToDisplayPerSlides }) => {
         // }
     }
 
-    console.log(itemWidth);
-    console.log(itemToDisplay);
-
 
     return (
         <section className={styles.customCarousel}>

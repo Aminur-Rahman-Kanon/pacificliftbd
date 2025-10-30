@@ -1,7 +1,7 @@
-import CardGridType from "../types/cardGrid"
-import CustomCarouselType from "../types/customCarousel"
-import FeatureGrid from "../types/featureGrid"
-import { Hero } from "../types/productPageSkeleton"
+import CardGridType from "@/app/types/cardGrid"
+import CustomCarouselType from "@/app/types/customCarousel"
+import FeatureGrid from "@/app/types/featureGrid"
+import { Hero } from "@/app/types/productPageSkeleton"
 
 export const hero1: Hero = {
     heroTop: {
