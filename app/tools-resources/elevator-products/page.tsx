@@ -10,7 +10,7 @@ const Page = () => {
     return (
         <section className={styles.products}>
             <HeroWithTextContainer hero={hero} />
-            <ProductContainer items={featuresGrid} heading='products' />
+            {/* <ProductContainer items={featuresGrid} heading='products' /> */}
             <NavigationComponent />
         </section>
     )
